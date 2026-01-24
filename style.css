@@ -1,0 +1,245 @@
+/* ---------------- Body ---------------- */
+body {
+    background: #F9FBF6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+    background: #2E7D32;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #FBC02D !important;
+}
+
+/* ---------------- Section Titles ---------------- */
+.section-title {
+    font-weight: bold;
+    color: #2E7D32;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn-custom,
+.btn-theme {
+    background: #FBC02D;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-custom:hover,
+.btn-theme:hover {
+    background: #F9A825;
+}
+
+/* ---------------- Cards ---------------- */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card:hover,
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* ---------------- Carousel ---------------- */
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------- Hero Section ---------------- */
+section.text-center.py-5.container {
+    padding: 60px 15px;
+}
+
+/* ---------------- Activity Section ---------------- */
+.activity .card-body h5 {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+/* ---------------- Products Page ---------------- */
+.page-title {
+    background: #C8E6C9;
+    padding: 50px 0;
+    text-align: center;
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+/* ---------------- Products Page / Pagination ---------------- */
+
+/* Product Card Hover (already handled, but extra safe) */
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Buttons for products page */
+.btn-theme {
+    background: #FBC02D;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-theme:hover {
+    background: #F9A825;
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+    color: #2E7D32;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #FBC02D;
+    border-color: #FBC02D;
+    color: #fff;
+}
+
+.pagination .page-link:hover {
+    background-color: #F9A825;
+    color: #fff;
+    border-color: #FBC02D;
+}
+
+/* Certification Page Specific */
+.cert-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-card .card-body h5 {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.cert-card img {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.page-title {
+    background: #C8E6C9;
+    padding: 50px 0;
+    text-align: center;
+    color: #2E7D32;
+    font-weight: bold;
+}
+/* Contact Page Background */
+.contact-section {
+    background: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover no-repeat;
+    position: relative;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.9);
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contact Info Section */
+/* Contact Info Section (Theme Based) */
+.contact-info {
+    background: linear-gradient(rgba(46, 125, 50, 0.95), rgba(27, 94, 32, 0.95)),
+        url('https://plus.unsplash.com/premium_photo-1661963559074-9655a9404f1a?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW1wb3J0JTIwZXhwb3J0fGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-info h5 {
+    color: #FBC02D;
+    /* Yellow headings */
+    letter-spacing: 1px;
+}
+
+.contact-info p,
+.contact-info li {
+    font-size: 14px;
+    color: #E8F5E9;
+    /* Light green text */
+}
+
+.contact-info ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-info ul li:hover {
+    color: #FBC02D;
+}
+
+/* Social Icons */
+.social-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    color: #C8E6C9;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #FBC02D;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background: #1B5E20;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    /* KEEP THIS */
+    z-index: 10;
+}
+
+/* ---------------- Responsive Tweaks ---------------- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+        height: 250px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}

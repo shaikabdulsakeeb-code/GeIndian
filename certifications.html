@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE - Certifications</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">GE General Enterprise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door-fill"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">
+                            <i class="bi bi-box-seam"></i> Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="certifications.html">
+                            <i class="bi bi-patch-check-fill"></i> Certifications
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope-fill"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-info-circle-fill"></i> About
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-title">
+        <h1>Our Certifications</h1>
+        <p>Quality Assurance & Trusted Standards</p>
+    </section>
+
+    <!-- CERTIFICATIONS GRID -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+                <!-- Certificate 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm cert-card h-100" data-bs-toggle="modal" data-bs-target="#pdfModal"
+                        data-pdf="images/certificates/IEC New.pdf">
+                        <!-- <img src="images/pdf-icon.png" alt="Certificate 1"> -->
+                        <div class="card-body text-center">
+                            <h5>IEC Certification <i class="bi bi-patch-check-fill"></i></h5>
+                            <p>Click to View Certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Certificate 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm cert-card h-100" data-bs-toggle="modal" data-bs-target="#pdfModal"
+                        data-pdf="images/certificates/GE GST Reg.pdf">
+                        <!-- <img src="images/pdf-icon.png" alt="Certificate 3"> -->
+                        <div class="card-body text-center">
+                            <h5>GST Certification <i class="bi bi-patch-check-fill"></i></h5>
+                            <p>Click to view Certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more certificates as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Modal -->
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width:90%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="" id="pdfFrame" style="width:100%; height:80vh;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTACT INFO SECTION -->
+    <section class="contact-info text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ABOUT -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">ABOUT GE ENTERPRISE</h5>
+                    <p>
+                        GE Enterprise is a growing agricultural products company specializing in
+                        food powders, vegetables, and export-quality farm goods. We are committed
+                        to delivering trusted and high-quality products worldwide.
+                    </p>
+                    <a href="#" class="text-warning text-decoration-none">Know More...</a>
+                </div>
+
+                <!-- USEFUL LINKS -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">USEFUL LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-arrow-right-circle-fill me-2 text-warning"></i> Home</li>
+                        <li><i class="bi bi-arrow-right-circle-fill me-2 text-warning"></i> Products</li>
+                        <li><i class="bi bi-arrow-right-circle-fill me-2 text-warning"></i> About Us</li>
+                        <li><i class="bi bi-arrow-right-circle-fill me-2 text-warning"></i> Certifications</li>
+                        <li><i class="bi bi-arrow-right-circle-fill me-2 text-warning"></i> Contact Us</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT DETAILS -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">CONNECT WITH US</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2 text-warning"></i> Pune, Maharashtra, India</p>
+                    <p><i class="bi bi-telephone-fill me-2 text-warning"></i> +91 98765 43210</p>
+                    <p><i class="bi bi-envelope-fill me-2 text-warning"></i> info@geenterprise.com</p>
+
+                    <!-- Social Icons -->
+                    <div class="mt-3">
+                        <i class="bi bi-facebook social-icon"></i>
+                        <i class="bi bi-instagram social-icon"></i>
+                        <i class="bi bi-linkedin social-icon"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 GE | Fresh from Farm 🌿
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // Change iframe src when modal opens
+        const pdfModal = document.getElementById('pdfModal');
+        const pdfFrame = document.getElementById('pdfFrame');
+
+        pdfModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const pdfSrc = button.getAttribute('data-pdf');
+            pdfFrame.src = pdfSrc;
+        });
+
+        // Clear iframe when modal closes (stops PDF playing)
+        pdfModal.addEventListener('hidden.bs.modal', function () {
+            pdfFrame.src = '';
+        });
+
+
+    </script>
+
+</body>
+
+</html>
