@@ -86,25 +86,6 @@ section.text-center.py-5.container {
     font-weight: bold;
 }
 
-/* ---------------- Products Page / Pagination ---------------- */
-
-/* Product Card Hover (already handled, but extra safe) */
-.product-card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
-}
-
-/* Buttons for products page */
-.btn-theme {
-    background: #FBC02D;
-    border: none;
-    font-weight: bold;
-}
-
-.btn-theme:hover {
-    background: #F9A825;
-}
-
 /* Pagination Styling */
 .pagination .page-link {
     color: #2E7D32;
@@ -122,7 +103,7 @@ section.text-center.py-5.container {
     border-color: #FBC02D;
 }
 
-/* Certification Page Specific */
+/* ---------------- Certification Page ---------------- */
 .cert-card {
     cursor: pointer;
     transition: transform 0.3s;
@@ -145,14 +126,7 @@ section.text-center.py-5.container {
     display: block;
 }
 
-.page-title {
-    background: #C8E6C9;
-    padding: 50px 0;
-    text-align: center;
-    color: #2E7D32;
-    font-weight: bold;
-}
-/* Contact Page Background */
+/* ---------------- Contact Page ---------------- */
 .contact-section {
     background: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover no-repeat;
     position: relative;
@@ -170,18 +144,16 @@ section.text-center.py-5.container {
     z-index: 2;
 }
 
-/* Contact Info Section */
-/* Contact Info Section (Theme Based) */
+/* Contact Info */
 .contact-info {
     background: linear-gradient(rgba(46, 125, 50, 0.95), rgba(27, 94, 32, 0.95)),
-        url('https://plus.unsplash.com/premium_photo-1661963559074-9655a9404f1a?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW1wb3J0JTIwZXhwb3J0fGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000');
+        url('https://plus.unsplash.com/premium_photo-1661963559074-9655a9404f1a');
     background-size: cover;
     background-position: center;
 }
 
 .contact-info h5 {
     color: #FBC02D;
-    /* Yellow headings */
     letter-spacing: 1px;
 }
 
@@ -189,17 +161,23 @@ section.text-center.py-5.container {
 .contact-info li {
     font-size: 14px;
     color: #E8F5E9;
-    /* Light green text */
 }
 
-.contact-info ul li {
-    margin-bottom: 8px;
-    cursor: pointer;
+/* ---------------- USEFUL LINKS FIX ---------------- */
+footer ul li a {
+    color: #E8F5E9;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-.contact-info ul li:hover {
+footer ul li a:hover {
     color: #FBC02D;
+    padding-left: 5px;
+}
+
+footer ul li a:hover i {
+    color: #FBC02D;
+    transform: translateX(3px);
 }
 
 /* Social Icons */
@@ -216,18 +194,16 @@ section.text-center.py-5.container {
 }
 
 /* Footer */
-/* Footer */
 footer {
     background: #1B5E20;
     color: white;
     padding: 20px 0;
     text-align: center;
     position: sticky;
-    /* KEEP THIS */
     z-index: 10;
 }
 
-/* ---------------- Responsive Tweaks ---------------- */
+/* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
     .section-title {
         font-size: 1.5rem;
