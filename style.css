@@ -87,6 +87,12 @@ section.text-center.py-5.container {
 }
 
 /* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 .pagination .page-link {
     color: #2E7D32;
 }
@@ -127,6 +133,54 @@ section.text-center.py-5.container {
 }
 
 /* ---------------- Contact Page ---------------- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f2f2f2;
+}
+
+.error-message {
+    display: none;
+    background: #ffe6e6;
+    color: #d8000c;
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-left: 4px solid #d8000c;
+}
+
+.input-error {
+    border: 2px solid #d8000c !important;
+}
+
+.success-message {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    background: #e6f9ec;
+    color: #198754;
+    border-left: 4px solid #198754;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.input-error {
+    border: 1px solid red !important;
+}
+
+
 .contact-section {
     background: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover no-repeat;
     position: relative;
@@ -136,7 +190,7 @@ section.text-center.py-5.container {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .contact-section .container {

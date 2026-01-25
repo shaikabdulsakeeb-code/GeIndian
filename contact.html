@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us - GE General Enterprise</title>
-
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us - GE General Enterprise</title>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- Bootstrap + Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -55,46 +56,61 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="card shadow p-4 border-0">
                         <h4 class="text-success mb-3 text-center">Send Request</h4>
+                        <form id="contactForm">
 
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter your name">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" placeholder="Enter your email">
-                                </div>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                                <div class="error-message" id="nameError">This field is required. Please input your
+                                    name.</div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-4 mb-3">
-                                    <input type="text" class="form-control" placeholder="Country">
-                                </div>
-
-                                <div class="col-md-4 mb-3">
-                                    <input type="text" class="form-control" placeholder="State">
-                                </div>
-
-                                <div class="col-md-4 mb-3">
-                                    <input type="text" class="form-control" placeholder="City">
-                                </div>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control">
+                                <div class="error-message" id="emailError">This field is required. Please input a valid
+                                    email.</div>
                             </div>
 
-                            <div class="mb-3">
-                                <input type="text" class="form-control"
-                                    placeholder="Enter product name (Example: Moringa Powder)">
+                            <!-- Location Row -->
+                            <div class="form-group">
+                                <label>Country (Required)</label>
+                                <input type="text" id="country" class="form-control">
+                                <div class="error-message" id="countryError">Country is required.</div>
                             </div>
 
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="4"
-                                    placeholder="Write your requirement..."></textarea>
+                            <div class="form-group">
+                                <label>State</label>
+                                <input type="text" id="state" class="form-control">
                             </div>
 
-                            <button type="submit" class="btn btn-custom w-100">Submit</button>
+                            <div class="form-group">
+                                <label>City</label>
+                                <input type="text" id="city" class="form-control">
+                            </div>
+
+                            <!-- Product -->
+                            <div class="form-group">
+                                <label>Product</label>
+                                <input type="text" id="product" class="form-control">
+                                <div class="error-message" id="productError">Product name is required.</div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label>Enter your message...</label>
+                                <textarea id="message" class="form-control" rows="4" name="message"></textarea>
+                                <div class="error-message" id="messageError">Message cannot be empty.</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-custom">SEND MESSAGE</button>
                         </form>
+                        <div id="successMessage" class="success-message">
+                            Thank you for contacting us, we will be in touch shortly.
+                        </div>
+
                     </div>
                 </div>
             </div>
