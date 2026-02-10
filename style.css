@@ -19,6 +19,10 @@ body {
 .nav-link:hover {
     color: #FBC02D !important;
 }
+.navbar-brand img {
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /* ---------------- Section Titles ---------------- */
 .section-title {
@@ -201,7 +205,7 @@ section.text-center.py-5.container {
 /* Contact Info */
 .contact-info {
     background: linear-gradient(rgba(46, 125, 50, 0.95), rgba(27, 94, 32, 0.95)),
-        url('https://plus.unsplash.com/premium_photo-1661963559074-9655a9404f1a');
+        url('images/footer-bg.jpg');
     background-size: cover;
     background-position: center;
 }
