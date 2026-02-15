@@ -72,6 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (message.value.trim() === "") { document.getElementById("messageError").style.display = "block"; message.classList.add("input-error"); isValid = false; }
 
             if (isValid) {
+                // Show spinner and disable button
+                const spinner = document.getElementById("spinner");
+                const sendBtn = document.getElementById("sendBtn");
+                spinner.style.display = "inline-block";
+                sendBtn.disabled = true;
 
                 let templateParams = {
                     user_name: name.value,
@@ -86,6 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 emailjs.send("service_afqktgw", "template_5kdvvwo", templateParams)
                     .then(function (response) {
+                        // Hide spinner and enable button
+                        spinner.style.display = "none";
+                        sendBtn.disabled = false;
+
                         form.reset();
                         document.getElementById("successMessage").style.display = "block";
                         setTimeout(() => {
@@ -93,10 +102,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         }, 6000);
                         console.log("SUCCESS!", response.status, response.text);
                     }, function (error) {
+                        spinner.style.display = "none"; // Hide spinner even if failed
+                        sendBtn.disabled = false;
                         console.log("FAILED...", error);
                         alert("Email sending failed!");
                     });
             }
+
 
         });
     }

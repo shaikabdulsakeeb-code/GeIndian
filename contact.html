@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact Us - GE General Enterprise</title>
-        <link rel="icon" type="image/jpeg" href="images/logo-title.png">
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-        <!-- Bootstrap + Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - GE General Enterprise</title>
+    <link rel="icon" type="image/jpeg" href="images/logo-title.png">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Bootstrap + Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -109,11 +109,15 @@
                                 <div class="error-message" id="messageError">Message cannot be empty.</div>
                             </div>
 
-                            <button type="submit" class="btn btn-custom">SEND MESSAGE</button>
+                            <button type="submit" class="btn btn-custom" id="sendBtn">SEND MESSAGE</button>
+                            <div id="spinner" class="spinner-border text-success mt-2" role="status"
+                                style="display:none;">
+                                <span class="visually-hidden">Sending...</span>
+                            </div>
+                            <div id="successMessage" class="success-message">
+                                Thank you for contacting us, we will be in touch shortly.
+                            </div>
                         </form>
-                        <div id="successMessage" class="success-message">
-                            Thank you for contacting us, we will be in touch shortly.
-                        </div>
 
                     </div>
                 </div>
@@ -162,7 +166,7 @@
                 <!-- CONTACT DETAILS -->
                 <div class="col-md-4">
                     <h5 class="fw-bold mb-3">CONNECT WITH US</h5>
-                     <p><i class="bi bi-geo-alt-fill me-2 text-warning"></i> Narayana Puram Colony Park - Poranki ,
+                    <p><i class="bi bi-geo-alt-fill me-2 text-warning"></i> Narayana Puram Colony Park - Poranki ,
                         Andhra pradesh , India</p>
                     <p><i class="bi bi-telephone-fill me-2 text-warning"></i> +91 88866 10123</p>
                     <p><i class="bi bi-envelope-fill me-2 text-warning"></i> info@geindian.com</p>
@@ -181,7 +185,8 @@
 
     <!-- FOOTER -->
     <footer>
-        © 2026 GE | Developed by <a style="text-decoration: none;" href="https://sakeeb-portfolio.netlify.app/" target="_blank" class="text-warning">Sakeeb</a>
+        © 2026 GE | Developed by <a style="text-decoration: none;" href="https://sakeeb-portfolio.netlify.app/"
+            target="_blank" class="text-warning">Sakeeb</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
