@@ -47,7 +47,7 @@ body {
 
 /* ---------------- Cards ---------------- */
 .card-img-top {
-    height: 200px;
+    height: 233px;
     object-fit: cover;
 }
 
@@ -257,6 +257,6 @@ footer {
     }
 
     .card-img-top {
-        height: 150px;
+        height: 224px;
     }
 }
